@@ -8,13 +8,20 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "Location.h"
+
 
 @implementation AppDelegate
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    [[Location sharedInstance] startLocation];
+
+    
     
     MainViewController *mainViewController = [[MainViewController alloc] init];
     self.window.rootViewController = mainViewController;

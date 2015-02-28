@@ -24,6 +24,10 @@
 		5BD401D01AA17D5300FE36DF /* AddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD401CF1AA17D5300FE36DF /* AddressBookViewController.m */; };
 		5BD401D41AA17D7D00FE36DF /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD401D31AA17D7D00FE36DF /* FindViewController.m */; };
 		5BD401D81AA17DA600FE36DF /* MyselfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD401D71AA17DA600FE36DF /* MyselfViewController.m */; };
+		5BD401DE1AA1882B00FE36DF /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BD401DA1AA1882B00FE36DF /* home@2x.png */; };
+		5BD401DF1AA1882B00FE36DF /* home_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BD401DB1AA1882B00FE36DF /* home_selected@2x.png */; };
+		5BD401E01AA1882B00FE36DF /* myself@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BD401DC1AA1882B00FE36DF /* myself@2x.png */; };
+		5BD401E11AA1882B00FE36DF /* myself_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BD401DD1AA1882B00FE36DF /* myself_selected@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		5BD401D31AA17D7D00FE36DF /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
 		5BD401D61AA17DA600FE36DF /* MyselfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyselfViewController.h; sourceTree = "<group>"; };
 		5BD401D71AA17DA600FE36DF /* MyselfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyselfViewController.m; sourceTree = "<group>"; };
+		5BD401DA1AA1882B00FE36DF /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
+		5BD401DB1AA1882B00FE36DF /* home_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_selected@2x.png"; sourceTree = "<group>"; };
+		5BD401DC1AA1882B00FE36DF /* myself@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myself@2x.png"; sourceTree = "<group>"; };
+		5BD401DD1AA1882B00FE36DF /* myself_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myself_selected@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +200,7 @@
 		5BD401C71AA17BF300FE36DF /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				5BD401E21AA1887D00FE36DF /* TabbarImages */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -239,6 +248,17 @@
 				5BD401C01AA17B5B00FE36DF /* MainViewController.m */,
 			);
 			name = MainViewContrller;
+			sourceTree = "<group>";
+		};
+		5BD401E21AA1887D00FE36DF /* TabbarImages */ = {
+			isa = PBXGroup;
+			children = (
+				5BD401DA1AA1882B00FE36DF /* home@2x.png */,
+				5BD401DB1AA1882B00FE36DF /* home_selected@2x.png */,
+				5BD401DC1AA1882B00FE36DF /* myself@2x.png */,
+				5BD401DD1AA1882B00FE36DF /* myself_selected@2x.png */,
+			);
+			name = TabbarImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,7 +339,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD401DE1AA1882B00FE36DF /* home@2x.png in Resources */,
+				5BD401DF1AA1882B00FE36DF /* home_selected@2x.png in Resources */,
 				5BD4019B1AA15EB800FE36DF /* InfoPlist.strings in Resources */,
+				5BD401E01AA1882B00FE36DF /* myself@2x.png in Resources */,
+				5BD401E11AA1882B00FE36DF /* myself_selected@2x.png in Resources */,
 				5BD401A31AA15EB800FE36DF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

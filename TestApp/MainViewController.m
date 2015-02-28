@@ -7,6 +7,10 @@
 //
 
 #import "MainViewController.h"
+#import "HomeViewController.h"
+#import "AddressBookViewController.h"
+#import "FindViewController.h"
+#import "MyselfViewController.h"
 
 @interface MainViewController ()
 
@@ -26,7 +30,29 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.viewControllers = @[
+                             [self createViewControllersWithControllerClass:[HomeViewController class] title:@"Home" imageName:[UIImage imageNamed:@"home"] selectedImageName:[UIImage imageNamed:@"home_selected"]],
+                             [self createViewControllersWithControllerClass:[AddressBookViewController class] title:@"AddressBook" imageName:[UIImage imageNamed:@"myself"] selectedImageName:[UIImage imageNamed:@"myself_selected"]],
+                             [self createViewControllersWithControllerClass:[FindViewController class] title:@"Find" imageName:[UIImage imageNamed:@"home"] selectedImageName:[UIImage imageNamed:@"home_selected"]],
+                             [self createViewControllersWithControllerClass:[MyselfViewController class] title:@"Myself" imageName:[UIImage imageNamed:@"myself"] selectedImageName:[UIImage imageNamed:@"myself_selected"]],
+                             ];
     // Do any additional setup after loading the view.
+}
+
+- (id)createViewControllersWithControllerClass:(Class)class title:(NSString *)title imageName:(UIImage *)image selectedImageName:(UIImage *)selectedImage
+{
+    Class cls = class;
+    UIViewController *viewController = [[cls alloc] init];
+    viewController.title = title;
+    viewController.tabBarItem.image = image;
+    viewController.tabBarItem.selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    viewController.tabBarItem.title = title;
+    viewController.tabBarItem.imageInsets = UIEdgeInsetsMake(4, 0, -4, 0);
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    return navController;
 }
 
 - (void)didReceiveMemoryWarning

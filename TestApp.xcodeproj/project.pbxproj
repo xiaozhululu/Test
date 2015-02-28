@@ -19,6 +19,11 @@
 		5BD401AC1AA15EB800FE36DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD401941AA15EB800FE36DF /* UIKit.framework */; };
 		5BD401B41AA15EB800FE36DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BD401B21AA15EB800FE36DF /* InfoPlist.strings */; };
 		5BD401B61AA15EB800FE36DF /* TestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD401B51AA15EB800FE36DF /* TestAppTests.m */; };
+		5BD401C11AA17B5B00FE36DF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD401C01AA17B5B00FE36DF /* MainViewController.m */; };
+		5BD401CC1AA17D0A00FE36DF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD401CB1AA17D0A00FE36DF /* HomeViewController.m */; };
+		5BD401D01AA17D5300FE36DF /* AddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD401CF1AA17D5300FE36DF /* AddressBookViewController.m */; };
+		5BD401D41AA17D7D00FE36DF /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD401D31AA17D7D00FE36DF /* FindViewController.m */; };
+		5BD401D81AA17DA600FE36DF /* MyselfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD401D71AA17DA600FE36DF /* MyselfViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,16 @@
 		5BD401B11AA15EB800FE36DF /* TestAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestAppTests-Info.plist"; sourceTree = "<group>"; };
 		5BD401B31AA15EB800FE36DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5BD401B51AA15EB800FE36DF /* TestAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAppTests.m; sourceTree = "<group>"; };
+		5BD401BF1AA17B5B00FE36DF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
+		5BD401C01AA17B5B00FE36DF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
+		5BD401CA1AA17D0A00FE36DF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		5BD401CB1AA17D0A00FE36DF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		5BD401CE1AA17D5300FE36DF /* AddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookViewController.h; sourceTree = "<group>"; };
+		5BD401CF1AA17D5300FE36DF /* AddressBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookViewController.m; sourceTree = "<group>"; };
+		5BD401D21AA17D7D00FE36DF /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
+		5BD401D31AA17D7D00FE36DF /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		5BD401D61AA17DA600FE36DF /* MyselfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyselfViewController.h; sourceTree = "<group>"; };
+		5BD401D71AA17DA600FE36DF /* MyselfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyselfViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +122,10 @@
 		5BD401961AA15EB800FE36DF /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				5BD401C71AA17BF300FE36DF /* Resource */,
+				5BD401C41AA17BCA00FE36DF /* Controller */,
+				5BD401C51AA17BCA00FE36DF /* Model */,
+				5BD401C61AA17BCA00FE36DF /* View */,
 				5BD4019F1AA15EB800FE36DF /* AppDelegate.h */,
 				5BD401A01AA15EB800FE36DF /* AppDelegate.m */,
 				5BD401A21AA15EB800FE36DF /* Images.xcassets */,
@@ -142,6 +161,84 @@
 				5BD401B21AA15EB800FE36DF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BD401C41AA17BCA00FE36DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BD401D91AA17DC400FE36DF /* MainViewContrller */,
+				5BD401D51AA17D9700FE36DF /* MyselfViewContrller */,
+				5BD401D11AA17D5700FE36DF /* FindViewController */,
+				5BD401CD1AA17D0E00FE36DF /* AddressBookViewContrller */,
+				5BD401C81AA17CBC00FE36DF /* HomeViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BD401C51AA17BCA00FE36DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BD401C61AA17BCA00FE36DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BD401C71AA17BF300FE36DF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5BD401C81AA17CBC00FE36DF /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5BD401CA1AA17D0A00FE36DF /* HomeViewController.h */,
+				5BD401CB1AA17D0A00FE36DF /* HomeViewController.m */,
+			);
+			name = HomeViewController;
+			sourceTree = "<group>";
+		};
+		5BD401CD1AA17D0E00FE36DF /* AddressBookViewContrller */ = {
+			isa = PBXGroup;
+			children = (
+				5BD401CE1AA17D5300FE36DF /* AddressBookViewController.h */,
+				5BD401CF1AA17D5300FE36DF /* AddressBookViewController.m */,
+			);
+			name = AddressBookViewContrller;
+			sourceTree = "<group>";
+		};
+		5BD401D11AA17D5700FE36DF /* FindViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5BD401D21AA17D7D00FE36DF /* FindViewController.h */,
+				5BD401D31AA17D7D00FE36DF /* FindViewController.m */,
+			);
+			name = FindViewController;
+			sourceTree = "<group>";
+		};
+		5BD401D51AA17D9700FE36DF /* MyselfViewContrller */ = {
+			isa = PBXGroup;
+			children = (
+				5BD401D61AA17DA600FE36DF /* MyselfViewController.h */,
+				5BD401D71AA17DA600FE36DF /* MyselfViewController.m */,
+			);
+			name = MyselfViewContrller;
+			sourceTree = "<group>";
+		};
+		5BD401D91AA17DC400FE36DF /* MainViewContrller */ = {
+			isa = PBXGroup;
+			children = (
+				5BD401BF1AA17B5B00FE36DF /* MainViewController.h */,
+				5BD401C01AA17B5B00FE36DF /* MainViewController.m */,
+			);
+			name = MainViewContrller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +288,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = NSF;
 				TargetAttributes = {
+					5BD4018C1AA15EB800FE36DF = {
+						DevelopmentTeam = S7NNS66376;
+					};
 					5BD401A71AA15EB800FE36DF = {
 						TestTargetID = 5BD4018C1AA15EB800FE36DF;
 					};
@@ -240,7 +340,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BD401A11AA15EB800FE36DF /* AppDelegate.m in Sources */,
+				5BD401C11AA17B5B00FE36DF /* MainViewController.m in Sources */,
 				5BD4019D1AA15EB800FE36DF /* main.m in Sources */,
+				5BD401D41AA17D7D00FE36DF /* FindViewController.m in Sources */,
+				5BD401D01AA17D5300FE36DF /* AddressBookViewController.m in Sources */,
+				5BD401CC1AA17D0A00FE36DF /* HomeViewController.m in Sources */,
+				5BD401D81AA17DA600FE36DF /* MyselfViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,10 +462,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestApp/TestApp-Prefix.pch";
 				INFOPLIST_FILE = "TestApp/TestApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -370,10 +478,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestApp/TestApp-Prefix.pch";
 				INFOPLIST_FILE = "TestApp/TestApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

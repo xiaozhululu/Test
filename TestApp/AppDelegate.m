@@ -20,7 +20,6 @@
     // Override point for customization after application launch.
     
     [[Location sharedInstance] startLocation];
-
     
     
     MainViewController *mainViewController = [[MainViewController alloc] init];

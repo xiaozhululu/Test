@@ -42,8 +42,8 @@
 - (void)startLocation
 {
     if ([CLLocationManager locationServicesEnabled]) {
-        [_manager startUpdatingLocation];
-    }
+            [_manager startUpdatingLocation];
+        }
 }
 
 - (void)stopLocation
@@ -53,12 +53,18 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
-    [self stopLocation];
-    NSLog(@"%@", locations);
+    CLLocation *location = locations[0];
+    CLLocationCoordinate2D coordinate = location.coordinate;
+    NSLog(@"%f, %f", coordinate.latitude, coordinate.longitude);
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
 {
+    [self stopLocation];
+    if (kCLErrorDenied == error.code) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"定位服务未开启" message:@"请前往系统设置 > 隐私 > 定位服务\n找到TestApp，并开启定位服务" delegate:self cancelButtonTitle:@"知道了" otherButtonTitles:nil, nil];
+        [alert show];
+    }
     NSLog(@"%@", error);
 }
 

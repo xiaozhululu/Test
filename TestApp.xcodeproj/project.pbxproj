@@ -79,6 +79,7 @@
 		5BD402771AA1CDFD00FE36DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD402761AA1CDFD00FE36DF /* MapKit.framework */; };
 		5BD402791AA1CE0A00FE36DF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD402781AA1CE0A00FE36DF /* CoreLocation.framework */; };
 		5BD4027C1AA1DBD400FE36DF /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4027B1AA1DBD400FE36DF /* Location.m */; };
+		5BD4027F1AA2BAE500FE36DF /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4027E1AA2BAE500FE36DF /* CustomNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -216,6 +217,8 @@
 		5BD402781AA1CE0A00FE36DF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5BD4027A1AA1DBD400FE36DF /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		5BD4027B1AA1DBD400FE36DF /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		5BD4027D1AA2BAE500FE36DF /* CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationController.h; sourceTree = "<group>"; };
+		5BD4027E1AA2BAE500FE36DF /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,6 +401,8 @@
 			children = (
 				5BD401BF1AA17B5B00FE36DF /* MainViewController.h */,
 				5BD401C01AA17B5B00FE36DF /* MainViewController.m */,
+				5BD4027D1AA2BAE500FE36DF /* CustomNavigationController.h */,
+				5BD4027E1AA2BAE500FE36DF /* CustomNavigationController.m */,
 			);
 			name = MainViewContrller;
 			sourceTree = "<group>";
@@ -704,6 +709,7 @@
 				5BD4021B1AA19CC400FE36DF /* UIButton+AFNetworking.m in Sources */,
 				5BD401D41AA17D7D00FE36DF /* FindViewController.m in Sources */,
 				5BD402191AA19CC400FE36DF /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				5BD4027F1AA2BAE500FE36DF /* CustomNavigationController.m in Sources */,
 				5BD4023B1AA1ACEE00FE36DF /* UINavigationController+TRVSNavigationControllerTransition.m in Sources */,
 				5BD402131AA19CC400FE36DF /* AFURLRequestSerialization.m in Sources */,
 				5BD402701AA1AECF00FE36DF /* UIImage+GIF.m in Sources */,
@@ -934,6 +940,7 @@
 				5BD401BB1AA15EB800FE36DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BD401BC1AA15EB800FE36DF /* Build configuration list for PBXNativeTarget "TestAppTests" */ = {
 			isa = XCConfigurationList;
@@ -942,6 +949,7 @@
 				5BD401BE1AA15EB800FE36DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

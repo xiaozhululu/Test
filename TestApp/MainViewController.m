@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "CustomNavigationController.h"
 #import "HomeViewController.h"
 #import "AddressBookViewController.h"
 #import "FindViewController.h"
@@ -50,7 +51,7 @@
     viewController.tabBarItem.title = title;
     viewController.tabBarItem.imageInsets = UIEdgeInsetsMake(4, 0, -4, 0);
     
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    CustomNavigationController *navController = [[CustomNavigationController alloc] initWithRootViewController:viewController];
     
     return navController;
 }

@@ -80,6 +80,11 @@
 		5BD402791AA1CE0A00FE36DF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD402781AA1CE0A00FE36DF /* CoreLocation.framework */; };
 		5BD4027C1AA1DBD400FE36DF /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4027B1AA1DBD400FE36DF /* Location.m */; };
 		5BD4027F1AA2BAE500FE36DF /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4027E1AA2BAE500FE36DF /* CustomNavigationController.m */; };
+		5BD4028B1AA4012800FE36DF /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD402831AA4012800FE36DF /* FAImageView.m */; };
+		5BD4028C1AA4012800FE36DF /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BD402841AA4012800FE36DF /* FontAwesome.ttf */; };
+		5BD4028D1AA4012800FE36DF /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD402861AA4012800FE36DF /* NSString+FontAwesome.m */; };
+		5BD4028E1AA4012800FE36DF /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD402881AA4012800FE36DF /* UIFont+FontAwesome.m */; };
+		5BD4028F1AA4012800FE36DF /* MozTopAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4028A1AA4012800FE36DF /* MozTopAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,6 +224,15 @@
 		5BD4027B1AA1DBD400FE36DF /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		5BD4027D1AA2BAE500FE36DF /* CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationController.h; sourceTree = "<group>"; };
 		5BD4027E1AA2BAE500FE36DF /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
+		5BD402821AA4012800FE36DF /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
+		5BD402831AA4012800FE36DF /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
+		5BD402841AA4012800FE36DF /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		5BD402851AA4012800FE36DF /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		5BD402861AA4012800FE36DF /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		5BD402871AA4012800FE36DF /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		5BD402881AA4012800FE36DF /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
+		5BD402891AA4012800FE36DF /* MozTopAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MozTopAlertView.h; sourceTree = "<group>"; };
+		5BD4028A1AA4012800FE36DF /* MozTopAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MozTopAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,6 +435,7 @@
 		5BD401E31AA19CC400FE36DF /* vendor */ = {
 			isa = PBXGroup;
 			children = (
+				5BD402801AA4012800FE36DF /* TopAlertView */,
 				5BD402441AA1AECF00FE36DF /* SDWebImage */,
 				5BD402401AA1AEAB00FE36DF /* MBProgressHUD */,
 				5BD4023C1AA1AE7B00FE36DF /* HMSegmentedControl */,
@@ -579,6 +594,30 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		5BD402801AA4012800FE36DF /* TopAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				5BD402811AA4012800FE36DF /* fontawesome */,
+				5BD402891AA4012800FE36DF /* MozTopAlertView.h */,
+				5BD4028A1AA4012800FE36DF /* MozTopAlertView.m */,
+			);
+			path = TopAlertView;
+			sourceTree = "<group>";
+		};
+		5BD402811AA4012800FE36DF /* fontawesome */ = {
+			isa = PBXGroup;
+			children = (
+				5BD402821AA4012800FE36DF /* FAImageView.h */,
+				5BD402831AA4012800FE36DF /* FAImageView.m */,
+				5BD402841AA4012800FE36DF /* FontAwesome.ttf */,
+				5BD402851AA4012800FE36DF /* NSString+FontAwesome.h */,
+				5BD402861AA4012800FE36DF /* NSString+FontAwesome.m */,
+				5BD402871AA4012800FE36DF /* UIFont+FontAwesome.h */,
+				5BD402881AA4012800FE36DF /* UIFont+FontAwesome.m */,
+			);
+			path = fontawesome;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -673,6 +712,7 @@
 				5BD4022E1AA19FE400FE36DF /* blackArrow.png in Resources */,
 				5BD4022F1AA19FE400FE36DF /* blackArrow@2x.png in Resources */,
 				5BD401A31AA15EB800FE36DF /* Images.xcassets in Resources */,
+				5BD4028C1AA4012800FE36DF /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,12 +738,14 @@
 				5BD401A11AA15EB800FE36DF /* AppDelegate.m in Sources */,
 				5BD4021D1AA19CC400FE36DF /* UIProgressView+AFNetworking.m in Sources */,
 				5BD401C11AA17B5B00FE36DF /* MainViewController.m in Sources */,
+				5BD4028D1AA4012800FE36DF /* NSString+FontAwesome.m in Sources */,
 				5BD402751AA1AECF00FE36DF /* UIView+WebCacheOperation.m in Sources */,
 				5BD4021A1AA19CC400FE36DF /* UIAlertView+AFNetworking.m in Sources */,
 				5BD4026C1AA1AECF00FE36DF /* SDWebImageDownloaderOperation.m in Sources */,
 				5BD4019D1AA15EB800FE36DF /* main.m in Sources */,
 				5BD402141AA19CC400FE36DF /* AFURLResponseSerialization.m in Sources */,
 				5BD402431AA1AEAB00FE36DF /* MBProgressHUD.m in Sources */,
+				5BD4028F1AA4012800FE36DF /* MozTopAlertView.m in Sources */,
 				5BD402321AA19FE400FE36DF /* EGORefreshTableFooterView.m in Sources */,
 				5BD4027C1AA1DBD400FE36DF /* Location.m in Sources */,
 				5BD4021B1AA19CC400FE36DF /* UIButton+AFNetworking.m in Sources */,
@@ -733,9 +775,11 @@
 				5BD401D81AA17DA600FE36DF /* MyselfViewController.m in Sources */,
 				5BD4021F1AA19CC400FE36DF /* UIWebView+AFNetworking.m in Sources */,
 				5BD402101AA19CC400FE36DF /* AFNetworkReachabilityManager.m in Sources */,
+				5BD4028E1AA4012800FE36DF /* UIFont+FontAwesome.m in Sources */,
 				5BD4021C1AA19CC400FE36DF /* UIImageView+AFNetworking.m in Sources */,
 				5BD402671AA1AECF00FE36DF /* NSData+ImageContentType.m in Sources */,
 				5BD402731AA1AECF00FE36DF /* UIImageView+HighlightedWebCache.m in Sources */,
+				5BD4028B1AA4012800FE36DF /* FAImageView.m in Sources */,
 				5BD402331AA19FE400FE36DF /* EGORefreshTableHeaderView.m in Sources */,
 				5BD4020E1AA19CC400FE36DF /* AFHTTPRequestOperationManager.m in Sources */,
 			);
